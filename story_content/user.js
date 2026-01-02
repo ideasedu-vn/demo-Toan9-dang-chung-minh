@@ -148,90 +148,136 @@ player.SetVar('ô5', ô5);
 window.Script7 = function()
 {
   var player = GetPlayer();
-for (var i = 1; i <= 99; i++) {
-    var inp = "dien_" + i;          // thay giá trị biến ở đây
-    var ans = player.GetVar(inp);             
-    var check = false;
+var ô1 = player.GetVar('ô1');
+var ô2 = player.GetVar('ô2');
+var ô3 = player.GetVar('ô3');
+var ô4 = player.GetVar('ô4');
+var ô5 = player.GetVar('ô5');
 
-    ans = ans.trim();
-    ans = ans.replace(/\s+/g, ' ');
-    player.SetVar(inp, ans);                  
+// Swap the values using a temporary variable
+var temp = ô1;
+ô1 = ô3;
+ô3 = temp;
 
-    if (/[a-zA-Z]/.test(ans) || isNaN(parseFloat(ans.replace(/,/g, '.')))) {
-        check = true;
-    } else {
-        var result = parseFloat(ans.replace(/\s+/g, '').replace(/,/g, '.'));
-        function addSpaceSeparators(number) {
-            var parts = number.toString().split('.');
-            parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
-            return parts.join('.');
-        }
-        var formattedResult = addSpaceSeparators(result);
-        var Result1 = formattedResult.replace(/\./g, ','); // Thay dấu . thành ,
-        player.SetVar(inp, Result1);             
-    }
-}
-
+// Update the variables with their new values
+player.SetVar('ô1', ô1);
+player.SetVar('ô2', ô2);
+player.SetVar('ô3', ô3);
+player.SetVar('ô4', ô4);
+player.SetVar('ô5', ô5);
 }
 
 window.Script8 = function()
 {
   var player = GetPlayer();
+var ô1 = player.GetVar('ô1');
+var ô2 = player.GetVar('ô2');
+var ô3 = player.GetVar('ô3');
+var ô4 = player.GetVar('ô4');
+var ô5 = player.GetVar('ô5');
 
-    var inp = "dien_1_2";          // thay giá trị biến ở đây
-    var ans = player.GetVar(inp);             
-    var check = false;
+// Swap the values using a temporary variable
+var temp = ô1;
+ô1 = ô2;
+ô2 = temp;
 
-    ans = ans.trim();
-    ans = ans.replace(/\s+/g, ' ');
-    player.SetVar(inp, ans);                  
-
-    if (/[a-zA-Z]/.test(ans) || isNaN(parseFloat(ans.replace(/,/g, '.')))) {
-        check = true;
-    } else {
-        var result = parseFloat(ans.replace(/\s+/g, '').replace(/,/g, '.'));
-        function addSpaceSeparators(number) {
-            var parts = number.toString().split('.');
-          
-            return parts.join('.');
-        }
-        var formattedResult = addSpaceSeparators(result);
-        var Result1 = formattedResult.replace(/\./g, ','); // Thay dấu . thành ,
-        player.SetVar(inp, Result1);             
-    }
-
+// Update the variables with their new values
+player.SetVar('ô1', ô1);
+player.SetVar('ô2', ô2);
+player.SetVar('ô3', ô3);
+player.SetVar('ô4', ô4);
+player.SetVar('ô5', ô5);
 }
 
 window.Script9 = function()
 {
   var player = GetPlayer();
-for (var i = 1; i <= 99; i++) {
-    var inp = "dien_" + i;          // thay giá trị biến ở đây
-    var ans = player.GetVar(inp);             
-    var check = false;
+var ô1 = player.GetVar('ô1');
+var ô2 = player.GetVar('ô2');
+var ô3 = player.GetVar('ô3');
+var ô4 = player.GetVar('ô4');
+var ô5 = player.GetVar('ô5');
 
-    ans = ans.trim();
-    ans = ans.replace(/\s+/g, ' ');
-    player.SetVar(inp, ans);                  
+// Swap the values using a temporary variable
+var temp = ô2;
+ô2 = ô3;
+ô3 = temp;
 
-    if (/[a-zA-Z]/.test(ans) || isNaN(parseFloat(ans.replace(/,/g, '.')))) {
-        check = true;
-    } else {
-        var result = parseFloat(ans.replace(/\s+/g, '').replace(/,/g, '.'));
-        function addSpaceSeparators(number) {
-            var parts = number.toString().split('.');
-            parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
-            return parts.join('.');
-        }
-        var formattedResult = addSpaceSeparators(result);
-        var Result1 = formattedResult.replace(/\./g, ','); // Thay dấu . thành ,
-        player.SetVar(inp, Result1);             
-    }
-}
-
+// Update the variables with their new values
+player.SetVar('ô1', ô1);
+player.SetVar('ô2', ô2);
+player.SetVar('ô3', ô3);
+player.SetVar('ô4', ô4);
+player.SetVar('ô5', ô5);
 }
 
 window.Script10 = function()
+{
+  var player = GetPlayer();
+var ô1 = player.GetVar('ô1');
+var ô2 = player.GetVar('ô2');
+var ô3 = player.GetVar('ô3');
+var ô4 = player.GetVar('ô4');
+var ô5 = player.GetVar('ô5');
+
+// Swap the values using a temporary variable
+var temp = ô1;
+ô1 = ô2;
+ô2 = temp;
+
+// Update the variables with their new values
+player.SetVar('ô1', ô1);
+player.SetVar('ô2', ô2);
+player.SetVar('ô3', ô3);
+player.SetVar('ô4', ô4);
+player.SetVar('ô5', ô5);
+}
+
+window.Script11 = function()
+{
+  var player = GetPlayer();
+var ô1 = player.GetVar('ô1');
+var ô2 = player.GetVar('ô2');
+var ô3 = player.GetVar('ô3');
+var ô4 = player.GetVar('ô4');
+var ô5 = player.GetVar('ô5');
+
+// Swap the values using a temporary variable
+var temp = ô2;
+ô2 = ô3;
+ô3 = temp;
+
+// Update the variables with their new values
+player.SetVar('ô1', ô1);
+player.SetVar('ô2', ô2);
+player.SetVar('ô3', ô3);
+player.SetVar('ô4', ô4);
+player.SetVar('ô5', ô5);
+}
+
+window.Script12 = function()
+{
+  var player = GetPlayer();
+var ô1 = player.GetVar('ô1');
+var ô2 = player.GetVar('ô2');
+var ô3 = player.GetVar('ô3');
+var ô4 = player.GetVar('ô4');
+var ô5 = player.GetVar('ô5');
+
+// Swap the values using a temporary variable
+var temp = ô1;
+ô1 = ô3;
+ô3 = temp;
+
+// Update the variables with their new values
+player.SetVar('ô1', ô1);
+player.SetVar('ô2', ô2);
+player.SetVar('ô3', ô3);
+player.SetVar('ô4', ô4);
+player.SetVar('ô5', ô5);
+}
+
+window.Script13 = function()
 {
   var player = GetPlayer();
 for (var i = 1; i <= 99; i++) {
@@ -260,7 +306,7 @@ for (var i = 1; i <= 99; i++) {
 
 }
 
-window.Script11 = function()
+window.Script14 = function()
 {
   var player = GetPlayer();
 
@@ -288,7 +334,93 @@ window.Script11 = function()
 
 }
 
-window.Script12 = function()
+window.Script15 = function()
+{
+  var player = GetPlayer();
+for (var i = 1; i <= 99; i++) {
+    var inp = "dien_" + i;          // thay giá trị biến ở đây
+    var ans = player.GetVar(inp);             
+    var check = false;
+
+    ans = ans.trim();
+    ans = ans.replace(/\s+/g, ' ');
+    player.SetVar(inp, ans);                  
+
+    if (/[a-zA-Z]/.test(ans) || isNaN(parseFloat(ans.replace(/,/g, '.')))) {
+        check = true;
+    } else {
+        var result = parseFloat(ans.replace(/\s+/g, '').replace(/,/g, '.'));
+        function addSpaceSeparators(number) {
+            var parts = number.toString().split('.');
+            parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+            return parts.join('.');
+        }
+        var formattedResult = addSpaceSeparators(result);
+        var Result1 = formattedResult.replace(/\./g, ','); // Thay dấu . thành ,
+        player.SetVar(inp, Result1);             
+    }
+}
+
+}
+
+window.Script16 = function()
+{
+  var player = GetPlayer();
+for (var i = 1; i <= 99; i++) {
+    var inp = "dien_" + i;          // thay giá trị biến ở đây
+    var ans = player.GetVar(inp);             
+    var check = false;
+
+    ans = ans.trim();
+    ans = ans.replace(/\s+/g, ' ');
+    player.SetVar(inp, ans);                  
+
+    if (/[a-zA-Z]/.test(ans) || isNaN(parseFloat(ans.replace(/,/g, '.')))) {
+        check = true;
+    } else {
+        var result = parseFloat(ans.replace(/\s+/g, '').replace(/,/g, '.'));
+        function addSpaceSeparators(number) {
+            var parts = number.toString().split('.');
+            parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+            return parts.join('.');
+        }
+        var formattedResult = addSpaceSeparators(result);
+        var Result1 = formattedResult.replace(/\./g, ','); // Thay dấu . thành ,
+        player.SetVar(inp, Result1);             
+    }
+}
+
+}
+
+window.Script17 = function()
+{
+  var player = GetPlayer();
+
+    var inp = "dien_1_2";          // thay giá trị biến ở đây
+    var ans = player.GetVar(inp);             
+    var check = false;
+
+    ans = ans.trim();
+    ans = ans.replace(/\s+/g, ' ');
+    player.SetVar(inp, ans);                  
+
+    if (/[a-zA-Z]/.test(ans) || isNaN(parseFloat(ans.replace(/,/g, '.')))) {
+        check = true;
+    } else {
+        var result = parseFloat(ans.replace(/\s+/g, '').replace(/,/g, '.'));
+        function addSpaceSeparators(number) {
+            var parts = number.toString().split('.');
+          
+            return parts.join('.');
+        }
+        var formattedResult = addSpaceSeparators(result);
+        var Result1 = formattedResult.replace(/\./g, ','); // Thay dấu . thành ,
+        player.SetVar(inp, Result1);             
+    }
+
+}
+
+window.Script18 = function()
 {
   var player = GetPlayer(); 
 
